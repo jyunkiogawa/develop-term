@@ -24,6 +24,12 @@ class TopicsController < ApplicationController
       render :new
     end
   end
+  
+  def destroy
+    topic = Topic.find(params[:id])
+    topic.destroy
+    redirect_back(fallback_location: topics_path)
+  end
 
   private
   def topic_params

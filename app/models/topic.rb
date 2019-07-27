@@ -6,7 +6,7 @@ class Topic < ApplicationRecord
   
   mount_uploader :image, ImageUploader
   
-  has_many :favorites
+  has_many :favorites, dependent: :destroy
 
   # def  favorites 
   #   Favorite.where(topic_id: id)
@@ -22,5 +22,5 @@ class Topic < ApplicationRecord
     return users
   end
   
-  has_many :comments
+  has_many :comments, dependent: :destroy
 end

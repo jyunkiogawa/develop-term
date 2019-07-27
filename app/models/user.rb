@@ -10,6 +10,6 @@ class User < ApplicationRecord
                       length: { minimum: 8, maximum: 28 },
                       format: { with: /\A[a-zA-Z0-9]+\z/ }
                       
-  has_many :favorites
-  has_many :favorite_topics, through: :favorites, source: 'topic'
+  has_many :favorites, dependent: :destroy
+  has_many :favorite_topics, through: :favorites, source: 'topic', dependent: :destroy
 end
