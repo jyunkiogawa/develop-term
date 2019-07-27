@@ -14,7 +14,10 @@
             </p>
             <h2 class="topic-author">コメント</h2>
             <% topic.comments.each do |comment| %>
-               <%= comment.content %>
+              <p>
+                <%= comment.content %>
+                <%= link_to "削除", topic_comment_path(topic_id: topic, id: comment), method: :delete %>
+              </p>
             <% end %>
             <div class="form-group">
               <%= form_with(model: [topic, @comment], local: true) do |f| %>
