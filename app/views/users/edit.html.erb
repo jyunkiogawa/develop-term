@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-offset-4 col-md-4 users-new-container">
-        <h1 class="text-center text-white">Sign up</h1>
+        <h1 class="text-center text-white">profile edit</h1>
         <%= form_for @user do |f| %>
           <div class="form-group">
             <%= f.label :name, class: 'text-white' %>
@@ -27,7 +27,6 @@
 
           <%= f.submit "登録", class: 'btn-block btn-white' %>
         <% end %>
-        <%= link_to 'ログインはこちら', login_path, class: 'text-white' %>
       </div>
     </div>
   </div>

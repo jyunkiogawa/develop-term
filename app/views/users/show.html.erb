@@ -1,0 +1,33 @@
+<div class="user-index-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <section>
+          <h1>
+            <%= @user.name %>
+          </h1>
+        </section>
+        <section class="stats">
+          <%= render 'shared/stats' %>
+        </section>
+      </div>
+      <div class="col-md-8">
+        <%= render 'follow_form' if logged_in? %>
+        <% if @user.topics.any? %>
+          <h2>Your feeds (<%= @user.topics.count %>)</h2>
+           <% @topics.each do |topic| %>
+            <div class="topic-index-single">
+             <h3>
+               <%=topic.user.name %>
+             </h3>
+              <%= image_tag topic.image.url %>
+              <p>
+              <%= topic.description %>
+              </p>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

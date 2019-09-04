@@ -1,0 +1,45 @@
+  <% if logged_in? %>
+  <div class="user-index-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <section>
+            <p class="user-name">
+            <%= current_user.name %>
+            </p>
+            <P>
+            <%= link_to 'プロフィールを表示', users_show_path(:id => current_user.id) %>
+            </p>
+          </section>
+          <section>
+            <%= render 'shared/stats' %>
+          </section>
+          <section>
+            <%= render 'shared/topic_form' %>ß
+          </section>
+        </div>
+      
+      
+        <div class="col-md-8">
+          <h1>All feeds</h1>
+          <% @topic_feed.each do |topic| %>
+          <div class="topic-index-single">
+            <h2>
+              <%=topic.user.name %>
+              <p>
+               <%= link_to 'プロフィールを表示', users_show_path(:id => current_user.id) %>
+              </p>
+            </h2>
+             <%= image_tag topic.image.url %>
+            <p class="description-size">
+              <%= topic.description %>
+            </p>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% else %>
+  redirect_to root_path
+<% end %>

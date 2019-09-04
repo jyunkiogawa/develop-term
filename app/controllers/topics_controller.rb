@@ -16,7 +16,6 @@ class TopicsController < ApplicationController
     # @topic.image = topic_params[:image]
     # @topic.description = topic_params[:description]
     @topic.user_id = current_user.id
-
     if @topic.save
       redirect_to topics_path, success: '投稿に成功しました'
     else

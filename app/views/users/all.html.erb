@@ -1,0 +1,17 @@
+<div class="topic-all-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h1>All users</h1>
+          <% @user.each do |user| %>
+            <div class="flex-wrapper">
+              <%= image_tag user.image.url %>
+              <h3>
+               <%= link_to user.name, user %>
+              </h3>
+            </div>
+          <% end %>
+      </div>
+    </div>
+  </div>
+</div>

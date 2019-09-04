@@ -1,0 +1,161 @@
+h1, h2 {
+  font-weight: 100; }
+
+.text-white {
+  color: #fff; }
+
+.btn-white {
+  color: #fff;
+  border: 1px solid #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0); }
+  .btn-white:hover {
+    color: #fff; }
+
+.top-hero-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: image-url("bg-top.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646; }
+
+.top-hero-container {
+  padding-top: 220px; }
+  .top-hero-container h1 {
+    font-size: 56px;
+    margin-bottom: 20px; }
+  .top-hero-container h2 {
+    margin-bottom: 60px; }
+
+.form-control {
+  height: 45px; }
+
+.users-new-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: image-url("bg-top.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646; }
+  .users-new-wrapper .users-new-container {
+    padding-top: 220px; }
+    .users-new-wrapper .users-new-container .form-group {
+      margin-bottom: 20px; }
+
+.alert {
+  margin-bottom: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000; }
+
+.navbar-transparent {
+  margin-bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .navbar-transparent a {
+    color: #fff !important; }
+  .navbar-transparent .navbar-brand {
+    padding: 0px;
+    margin-top: 15px; }
+  .navbar-transparent img {
+    height: 40px; }
+
+.btn-black {
+  color: #565656;
+  border: 1px solid #565656;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0); }
+  .btn-black:hover {
+    color: #565656; }
+
+.topic-new-wrapper {
+  padding-top: 120px; }
+
+.topic-index-wrapper {
+  padding-top: 70px;
+  background-color: #fafafa; }
+  .topic-index-wrapper .topic-index-single {
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border: 1px solid #e6ecf0;
+    border-radius: 3px; }
+    .topic-index-wrapper .topic-index-single .topic-author {
+      padding-right: 20px;
+      padding-left: 20px; }
+    .topic-index-wrapper .topic-index-single .topic-text {
+      padding-right: 20px;
+      padding-left: 20px; }
+    .topic-index-wrapper .topic-index-single img {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 100%; }
+    .topic-index-wrapper .topic-index-single .topic-index-icon {
+      width: 35px;
+      height: 30px;
+      margin-left: 20px; }
+    .topic-index-wrapper .topic-index-single .topic-index-icon-change {
+      width: 35px;
+      height: 30px;
+      margin-left: 20px;
+      color: #ff2581; }
+
+.topic-all-wrapper {
+  padding-top: 70px;
+  background-color: #fafafa; }
+  .topic-all-wrapper .flex-wrapper {
+    display: flex; }
+  .topic-all-wrapper img {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 17%;
+    margin-right: 30px; }
+
+.user-index-wrapper {
+  padding-top: 70px;
+  background-color: #fafafa; }
+  .user-index-wrapper .user-name {
+    font-size: 38px; }
+  .user-index-wrapper .topic-index-single {
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 30px;
+    border: 1px solid #e6ecf0;
+    border-radius: 3px; }
+    .user-index-wrapper .topic-index-single .topic-author {
+      padding-right: 20px;
+      padding-left: 20px; }
+    .user-index-wrapper .topic-index-single .user-name {
+      font-size: 56px; }
+    .user-index-wrapper .topic-index-single .topic-text {
+      padding-right: 20px;
+      padding-left: 20px; }
+    .user-index-wrapper .topic-index-single img {
+      margin: 20px;
+      width: 60%; }
+    .user-index-wrapper .topic-index-single .description-size {
+      font-size: 20px; }
+    .user-index-wrapper .topic-index-single .topic-index-icon {
+      width: 35px;
+      height: 30px;
+      margin-left: 20px; }
+    .user-index-wrapper .topic-index-single .topic-index-icon-change {
+      width: 35px;
+      height: 30px;
+      margin-left: 20px;
+      color: #ff2581; }
+
+.count-size {
+  font-size: 20px; }
+
+/*# sourceMappingURL=custom.css.map */
