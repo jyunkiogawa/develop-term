@@ -1,0 +1,16 @@
+<h1>Add Picture</h1>
+<%= form_for @topic do |f| %>
+  <div>
+    <%= f.label :image %>
+    <%= f.file_field :image%>
+  </div>
+
+  <div>
+    <%= f.label :description %>
+    <%= f.text_area :description, class: 'form-control' %>
+  </div>
+  <% if logged_in? %>
+    <%= f.submit '投稿', class: 'btn btn-black btn-block' %>
+  <% end %>
+<% end %>
+      

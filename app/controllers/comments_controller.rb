@@ -13,8 +13,7 @@ class CommentsController < ApplicationController
   
   def destroy
     
-    topic = Topic.find(params[:topic_id])
-      @comment = topic.comments.find(params[:id])
+      @comment = Comment.find(params[:id])
       @comment.destroy
         redirect_back(fallback_location: favorites_index_path)
   end 

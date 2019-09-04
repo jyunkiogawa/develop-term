@@ -22,18 +22,34 @@
         <ul class="nav navbar-nav navbar-right">
           <% if logged_in? %>
             <li>
+              <%= link_to users_all_path do %>
+                <%= image_tag 'all-white.png' %>
+            <% end %>
+            </li>
+            <li>
+              <%= link_to users_index_path do %>
+                <%= image_tag 'follow.png' %>
+              <% end %>
+            </li>
+            
+            <li>
               <%= link_to favorites_index_path do %>
-                <%= image_tag 'heart.png' %>
+                <%= image_tag 'heart-black2.png' %>
               <% end %>
             </li>
             <li>
               <%= link_to new_topic_path do %>
-                <%= image_tag 'camera.png' %>
+                <%= image_tag 'camera2.png' %>
               <% end %>
             </li>
             <li>
               <%= link_to logout_path, method: :delete do %>
-                <%= image_tag "logout.png" %>
+                <%= image_tag "logout2.png" %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to users_edit_path, method: :put do %>
+               <%= image_tag "edit.png" %>
               <% end %>
             </li>
           <% else %>
@@ -51,8 +67,8 @@
         </ul>
       </div>
     </nav>
-
     <%= yield %>
+   
     
     <script>
       $(function(){
